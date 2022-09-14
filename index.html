@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Encriptador Challenge Oracle Alura</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="left-side">
+        <div class="logo">
+          <a href="https://aluracursos.com" rel="noopener" target="_blank">
+          <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <textarea id="input-Text" class="text-to-encrypt" placeholder="Ingrese el texto aquí"></textarea>
+          <section class="buttons-section">
+            <div class="helper-text-container">
+              <div class="icon">
+                <img
+                  src="./images/exclamacion.png"
+                  alt="exclamacion"
+                />
+              </div>
+                <p> Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="button-container">
+              <button class="encrypt-button" onclick="btnEncrypt()">
+                Encriptar
+              </button>
+              <button class="decrypt-button" onclick="btnDecrypt()">
+                Desencriptar
+              </button>
+            </div>
+          </section>
+      </section>
+
+      <section class="result-side">
+        <div class="no-message-encrypted">
+          <img src="./images/muñeco.png" alt="muñeco" class="muñeco" />
+            <div class="messages-container">
+              <p class="main-message">Ningún mensaje fue encontrado</p>
+              <span class="secondary-message"
+                >Ingresa el texto que desees encriptar o desencriptar.</span
+              >
+            </div>
+        </div>
+
+        <div class="result-display hidden">
+          <textarea name="encrypted-message" id="encrypted-message" 
+                    class="encrypted-message">
+          </textarea>
+          <button class="copy-btn" onclick="btnCopy()">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+    <footer>
+        <p class="copyright">&copy Copyright Kelber - 2022</p>
+        <div class="networks">
+          <a href="https://www.linkedin.com/in/kelber-cuba-data-analyst/" rel="noopener" target="_blank">
+            <img  class="linkedin" src="/images/LinkedIn_logo.png"  alt="Linkedin">
+          </a>
+          <a href="https://github.com/cinefilo1974" rel="noopener" target="_blank">
+            <img class="github" src="/images/GitHub_logo.png"  alt="GitHub">
+          </a>
+        </div>
+
+    </footer>
+  </body>
+</html>
